@@ -32,6 +32,10 @@ body {
   opacity: 100% !important;
 }
 
+.successMessage.show {
+  display: block;
+}
+
 .successMessage img {
   width: 120px;
   position: relative;
