@@ -15,6 +15,44 @@ body {
   }
 }
 
+.errorMessage {
+  display: none;
+  color: red;
+}
+
+.successMessage {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  color: white;
+  opacity: 100% !important;
+}
+
+.successMessage img {
+  width: 120px;
+  position: relative;
+  top: 20%;
+  left: 40%;
+}
+
+.successMessage h2 {
+  text-align: center;
+  position: relative;
+  top: 30%;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 920px;
+  flex-wrap: wrap;
+}
+
 // main {
 //     h2 { 
 //         text-transform: uppercase;
@@ -36,6 +74,7 @@ body {
 .contactBox {
   background-color: $up-bg-color;
   padding: $content-padding;
+  height: 100%;
 }
 
 
@@ -49,13 +88,14 @@ body {
 .infoBox {
   background-color: $info-bg-color;
   color: info-text-color;
-  width: 240px;
-  height: 260px;
+  width: 200px;
+  height: 300px;
   padding: 50px;
+  margin-top: 50px;
   text-align: center;
-  position: absolute;
-  top: 150px;
-  left: 800px;
+  // position: absolute;
+  // top: 150px;
+  // left: 850px;
 }
 
 .infoBox h2 {
