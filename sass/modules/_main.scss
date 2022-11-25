@@ -20,6 +20,10 @@ body {
   color: red;
 }
 
+.errorMessage.fail {
+  display: block;
+}
+
 .successMessage {
   display: none;
   position: absolute;

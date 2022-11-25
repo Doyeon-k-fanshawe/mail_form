@@ -15,7 +15,13 @@ import { SendMail } from "./components/mailer.js";
             // show a failure message in the UI
             // use this.$refs to connect to the elements on the page and mark any empty fields/inputs with an error class
             // alert('failure! and if you keep using an alert, DOUBLE failure!');        
-            document.querySelector('.errorMessage').style.display = 'block';
+            let fails = document.querySelector('.errorMessage');
+
+            fails.classList.add('fail');
+
+            setTimeout(function(){
+              fails.classList.remove('fail');
+            }, 8000);
             // show some errors in the UI here to let the user know the mail attempt was successful
           },
 
