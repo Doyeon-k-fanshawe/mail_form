@@ -41,7 +41,7 @@
       "X-Mailer: PHP/" . phpversion();
 
       if (count($fail)==0) {
-          mail($recipient, $subject, $message, $headers);
+          mail($recipient, $subject, $message);
           $results['message'] = sprintf('Thank you for contacting us, %s. You will get a reply within 24 hours', $visitor_name);
       } else {
           header('HTTP/1.1 488 You Did NOT fill out the form correctly');

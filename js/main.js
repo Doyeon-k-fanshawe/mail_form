@@ -24,9 +24,11 @@ import { SendMail } from "./components/mailer.js";
             // alert("success! but don't EVER use alerts. They are gross.");   
             let successful = document.querySelector('.successMessage');
 
+            successful.classList.add('show');
+
             setTimeout(function(){
-              successful.classList.add('show');
-            }, 3000);
+              successful.classList.remove('show');
+            }, 5000);
 
             // document.querySelector('.successMessage').style.display = 'block';
             // show some UI here to let the user know the mail attempt was successful
